@@ -2,6 +2,7 @@ import sys
 
 
 def error_message_detail(error, error_detail:sys):
+    # exception type, exception value, and traceback object
     _ , _ , exc_tb = error_detail.exc_info()
 
     error_message = f"Error occured in python script name: [{exc_tb.tb_frame.f_code.co_filename}] line: [{exc_tb.tb_lineno}] error message: [{str(error)}]"
