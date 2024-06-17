@@ -6,6 +6,8 @@ import dill
 from src.exception import CustomException
 from src.logger import logging
 from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
+from src.components.params import params
 
 def save_object(file_path, object):
 
@@ -32,15 +34,22 @@ def evaluate_models(X_train, y_train, X_test, y_test, models):
             logging.info(f"Training model: {model}")
 
             ml = models[model]
+            logging.info(ml)
 
-            ml.fit(X_train, y_train)
+            if model=="LR":
+                ml.fit(X_train, y_train)
+                train_r2 = r2_score(y_train, ml.predict(X_train) )
+                test_r2 = r2_score(y_test, ml.predict(X_test) )
+            else:
+                gsc = GridSearchCV( ml, params(model), n_jobs=-1, cv=5, scoring="r2")
 
-            train_r2 = r2_score(y_train, ml.predict(X_train) )
-            test_r2 = r2_score(y_test, ml.predict(X_test) )
+                logging.info(gsc)
+                gsc.fit(X_train, y_train)
 
+                train_r2 = r2_score(y_train, gsc.predict(X_train) )
+                test_r2 = r2_score(y_test, gsc.predict(X_test) )
 
             scores[model] = [ml, test_r2]
-
         
         return scores
 

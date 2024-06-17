@@ -1,0 +1,7 @@
+2024-06-15 19:56:34,808 : logger.py : 15: Logging has Started: logger
+2024-06-15 19:59:17,385 : INFO: logger.py : 15: Logging has Started
+2024-06-15 20:00:33,088 : INFO : root :  logger.py : 15: Logging has Started
+2024-06-15 20:01:43,776 : INFO : root :  logger.py : 15: Logging has Started
+2024-06-15 20:17:15,865 : DEBUG : root :  exception.py : 29: Divide Error
+2024-06-15 20:17:32,933 : DEBUG : root :  exception.py : 29: division by zero
+2024-06-15 20:17:51,002 : DEBUG : root :  exception.py : 29: division by zero

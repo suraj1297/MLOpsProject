@@ -1,0 +1,603 @@
+2024-06-16 02:22:42,085 : DEBUG : root :  data_transformation.py : 61: Pipeline.__init__() takes 2 positional arguments but 3 were given
+2024-06-16 02:23:05,885 : DEBUG : root :  data_transformation.py : 61: Pipeline.__init__() takes 2 positional arguments but 3 were given
+2024-06-16 02:25:52,789 : DEBUG : root :  data_transformation.py : 64: division by zero
+2024-06-16 02:26:13,781 : DEBUG : root :  data_transformation.py : 64: division by zero
+2024-06-16 02:26:18,940 : DEBUG : root :  data_transformation.py : 64: division by zero
+2024-06-16 02:26:49,390 : DEBUG : root :  data_transformation.py : 64: division by zero
+2024-06-16 02:27:04,493 : DEBUG : root :  data_transformation.py : 64: division by zero
+2024-06-16 03:01:35,757 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:01:35,771 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:01:35,771 : DEBUG : root :  data_transformation.py : 95: cannot access local variable 'train_data' where it is not associated with a value
+2024-06-16 03:02:28,485 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:02:28,494 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:02:28,495 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:02:28,495 : DEBUG : root :  data_transformation.py : 59: Pipeline.__init__() takes 2 positional arguments but 3 were given
+2024-06-16 03:02:28,496 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:02:28,497 : INFO : root :  data_transformation.py : 79: Dropped Target feature from train n test data
+2024-06-16 03:02:28,497 : DEBUG : root :  data_transformation.py : 95: 'NoneType' object has no attribute 'fit_transform'
+2024-06-16 03:02:54,817 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:02:54,824 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:02:54,826 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:02:54,826 : DEBUG : root :  data_transformation.py : 59: Pipeline.__init__() takes 2 positional arguments but 3 were given
+2024-06-16 03:02:54,826 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:02:54,827 : INFO : root :  data_transformation.py : 79: Dropped Target feature from train n test data
+2024-06-16 03:02:54,827 : DEBUG : root :  data_transformation.py : 95: 'NoneType' object has no attribute 'fit_transform'
+2024-06-16 03:04:55,488 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:04:55,498 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:04:55,500 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:04:55,501 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:04:55,501 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:04:55,501 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:04:55,501 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:04:55,502 : INFO : root :  data_transformation.py : 79: Dropped Target feature from train n test data
+2024-06-16 03:04:55,508 : DEBUG : root :  data_transformation.py : 95: Cannot center sparse matrices: pass `with_mean=False` instead. See docstring for motivation and alternatives.
+2024-06-16 03:08:06,000 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:08:06,013 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:08:06,015 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:08:06,015 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:08:06,015 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:08:06,015 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:08:06,015 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:08:06,023 : INFO : root :  data_transformation.py : 81: Dropped Target feature from train n test data
+2024-06-16 03:08:06,030 : DEBUG : root :  data_transformation.py : 97: Cannot center sparse matrices: pass `with_mean=False` instead. See docstring for motivation and alternatives.
+2024-06-16 03:09:47,252 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:09:47,260 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:09:47,262 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:09:47,262 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:09:47,262 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:09:47,262 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:09:47,262 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:09:47,267 : INFO : root :  data_transformation.py : 81: Dropped Target feature from train n test data
+2024-06-16 03:09:47,273 : DEBUG : root :  data_transformation.py : 97: Cannot center sparse matrices: pass `with_mean=False` instead. See docstring for motivation and alternatives.
+2024-06-16 03:13:29,912 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:13:29,925 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:13:29,927 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:13:29,927 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:13:29,927 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:13:29,927 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:13:29,927 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:13:29,934 : INFO : root :  data_transformation.py : 81: Dropped Target feature from train n test data
+2024-06-16 03:13:29,941 : DEBUG : root :  data_transformation.py : 97: Cannot center sparse matrices: pass `with_mean=False` instead. See docstring for motivation and alternatives.
+2024-06-16 03:16:48,451 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:16:48,463 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:16:48,465 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:16:48,465 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:16:48,465 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:16:48,465 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:16:48,465 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:16:48,466 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 03:16:48,477 : DEBUG : root :  data_transformation.py : 96: 'CClass' object is not callable
+2024-06-16 03:17:39,300 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 03:17:39,308 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 03:17:39,310 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:30:35,517 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:30:35,522 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:30:35,534 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:30:35,534 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:30:35,536 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:30:35,536 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:30:35,536 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:30:35,536 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:30:35,536 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:30:35,537 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:30:35,551 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:30:35,551 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:30:35,551 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:30:35,551 : DEBUG : root :  model_trainer.py : 73: LinearRegression.__init__() got an unexpected keyword argument 'random_state'
+2024-06-16 19:30:35,551 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [40] error message: [LinearRegression.__init__() got an unexpected keyword argument 'random_state']
+2024-06-16 19:31:42,237 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:31:42,240 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:31:42,247 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:31:42,247 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:31:42,249 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:31:42,261 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:31:42,261 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:31:42,261 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:31:42,261 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:31:42,261 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:31:42,290 : DEBUG : root :  utils.py : 50: unsupported operand type(s) for -: 'list' and 'int'
+2024-06-16 19:31:42,290 : DEBUG : root :  model_trainer.py : 73: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [41] error message: [unsupported operand type(s) for -: 'list' and 'int']
+2024-06-16 19:31:42,290 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [41] error message: [unsupported operand type(s) for -: 'list' and 'int']]
+2024-06-16 19:33:28,784 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:33:28,787 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:33:28,796 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:33:28,796 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:33:28,799 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:33:28,799 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:33:28,799 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:33:28,799 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:33:28,799 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:33:28,800 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:33:28,811 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:33:28,811 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:33:28,811 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:33:28,811 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:33:28,812 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:33:28,834 : DEBUG : root :  utils.py : 50: unsupported operand type(s) for -: 'list' and 'int'
+2024-06-16 19:33:28,834 : DEBUG : root :  model_trainer.py : 73: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [41] error message: [unsupported operand type(s) for -: 'list' and 'int']
+2024-06-16 19:33:28,834 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [41] error message: [unsupported operand type(s) for -: 'list' and 'int']]
+2024-06-16 19:33:58,094 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:33:58,097 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:33:58,104 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:33:58,104 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:33:58,106 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:33:58,118 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:33:58,118 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:33:58,118 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:33:58,118 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:33:58,118 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:33:58,140 : DEBUG : root :  utils.py : 54: unsupported operand type(s) for -: 'list' and 'int'
+2024-06-16 19:33:58,140 : DEBUG : root :  model_trainer.py : 73: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [45] error message: [unsupported operand type(s) for -: 'list' and 'int']
+2024-06-16 19:33:58,140 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [45] error message: [unsupported operand type(s) for -: 'list' and 'int']]
+2024-06-16 19:34:24,646 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:34:24,649 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:34:24,656 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:34:24,656 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:34:24,658 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:34:24,658 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:34:24,658 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:34:24,659 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:34:24,659 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:34:24,659 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:34:24,671 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:34:24,671 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:34:24,671 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:34:24,671 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:34:24,671 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:34:24,697 : INFO : root :  utils.py : 32: Training model: SVR
+2024-06-16 19:34:24,943 : INFO : root :  utils.py : 32: Training model: KNN
+2024-06-16 19:34:25,234 : INFO : root :  utils.py : 32: Training model: DT
+2024-06-16 19:34:25,240 : INFO : root :  utils.py : 32: Training model: XGB
+2024-06-16 19:34:25,413 : INFO : root :  utils.py : 32: Training model: ADB
+2024-06-16 19:34:25,491 : INFO : root :  utils.py : 32: Training model: GBR
+2024-06-16 19:34:25,580 : INFO : root :  utils.py : 32: Training model: RF
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 20.868719251996126
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 20.767834185895868
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 20.569014552412693
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 20.838811415315206
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 20.82166056861043
+2024-06-16 19:34:25,834 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 20.826000546263355
+2024-06-16 19:34:25,835 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 20.86706754865644
+2024-06-16 19:34:25,835 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 20.858772421818735
+2024-06-16 19:34:25,835 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 19:34:25,835 : DEBUG : root :  model_trainer.py : 73: list index out of range
+2024-06-16 19:34:25,835 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [68] error message: [list index out of range]
+2024-06-16 19:36:19,308 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:36:19,311 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:36:19,318 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:36:19,318 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:36:19,320 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:36:19,320 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:36:19,320 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:36:19,320 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:36:19,320 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:36:19,321 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:36:19,332 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:36:19,332 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:36:19,332 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:36:19,333 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:36:19,333 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:36:19,355 : INFO : root :  utils.py : 32: Training model: SVR
+2024-06-16 19:36:19,555 : INFO : root :  utils.py : 32: Training model: KNN
+2024-06-16 19:36:19,813 : INFO : root :  utils.py : 32: Training model: DT
+2024-06-16 19:36:19,817 : INFO : root :  utils.py : 32: Training model: XGB
+2024-06-16 19:36:20,013 : INFO : root :  utils.py : 32: Training model: ADB
+2024-06-16 19:36:20,131 : INFO : root :  utils.py : 32: Training model: GBR
+2024-06-16 19:36:20,219 : INFO : root :  utils.py : 32: Training model: RF
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 20.868719251996126
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 20.767834185895868
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 20.569014552412693
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 20.838811415315206
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 20.82166056861043
+2024-06-16 19:36:20,472 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 20.82797725446575
+2024-06-16 19:36:20,473 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 20.866633750188917
+2024-06-16 19:36:20,473 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 20.86001078761629
+2024-06-16 19:36:20,473 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 19:36:20,475 : DEBUG : root :  model_trainer.py : 73: list index out of range
+2024-06-16 19:36:20,475 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [68] error message: [list index out of range]
+2024-06-16 19:38:12,346 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:38:12,349 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:38:12,356 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:38:12,356 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:38:12,358 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:38:12,358 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:38:12,358 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:38:12,358 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:38:12,358 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:38:12,359 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:38:12,370 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:38:12,370 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:38:12,370 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:38:12,370 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:38:12,370 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:38:12,392 : INFO : root :  utils.py : 32: Training model: SVR
+2024-06-16 19:38:12,624 : INFO : root :  utils.py : 32: Training model: KNN
+2024-06-16 19:38:12,836 : INFO : root :  utils.py : 32: Training model: DT
+2024-06-16 19:38:12,840 : INFO : root :  utils.py : 32: Training model: XGB
+2024-06-16 19:38:13,051 : INFO : root :  utils.py : 32: Training model: ADB
+2024-06-16 19:38:13,129 : INFO : root :  utils.py : 32: Training model: GBR
+2024-06-16 19:38:13,217 : INFO : root :  utils.py : 32: Training model: RF
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.7628341858958672
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.5640145524126926
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.8338114153152061
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8166605686104284
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8271990401079825
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8618767336467987
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8539068135416716
+2024-06-16 19:38:13,470 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 19:38:13,472 : DEBUG : root :  model_trainer.py : 74: list index out of range
+2024-06-16 19:38:13,472 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [69] error message: [list index out of range]
+2024-06-16 19:40:20,339 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:40:20,342 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:40:20,349 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:40:20,349 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:40:20,351 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:40:20,351 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:40:20,351 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:40:20,351 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:40:20,351 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:40:20,352 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:40:20,363 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:40:20,363 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:40:20,363 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:40:20,364 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:40:20,364 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:40:20,382 : INFO : root :  utils.py : 32: Training model: SVR
+2024-06-16 19:40:20,607 : INFO : root :  utils.py : 32: Training model: KNN
+2024-06-16 19:40:20,934 : INFO : root :  utils.py : 32: Training model: DT
+2024-06-16 19:40:20,937 : INFO : root :  utils.py : 32: Training model: XGB
+2024-06-16 19:40:21,099 : INFO : root :  utils.py : 32: Training model: ADB
+2024-06-16 19:40:21,179 : INFO : root :  utils.py : 32: Training model: GBR
+2024-06-16 19:40:21,265 : INFO : root :  utils.py : 32: Training model: RF
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.7628341858958672
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.5640145524126926
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.8338114153152061
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8166605686104284
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.820387099405959
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8617459515343604
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8542870473014215
+2024-06-16 19:40:21,518 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 19:40:21,520 : DEBUG : root :  model_trainer.py : 74: list index out of range
+2024-06-16 19:40:21,520 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [69] error message: [list index out of range]
+2024-06-16 19:42:24,968 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 19:42:24,973 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 19:42:24,983 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 19:42:24,983 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 19:42:24,985 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 19:42:24,985 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 19:42:24,985 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 19:42:24,985 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 19:42:24,985 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 19:42:24,986 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 19:42:25,000 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 19:42:25,000 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 19:42:25,000 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 19:42:25,000 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 19:42:25,000 : INFO : root :  utils.py : 32: Training model: LR
+2024-06-16 19:42:25,028 : INFO : root :  utils.py : 32: Training model: SVR
+2024-06-16 19:42:25,298 : INFO : root :  utils.py : 32: Training model: KNN
+2024-06-16 19:42:25,386 : INFO : root :  utils.py : 32: Training model: DT
+2024-06-16 19:42:25,391 : INFO : root :  utils.py : 32: Training model: XGB
+2024-06-16 19:42:25,683 : INFO : root :  utils.py : 32: Training model: ADB
+2024-06-16 19:42:25,770 : INFO : root :  utils.py : 32: Training model: GBR
+2024-06-16 19:42:25,873 : INFO : root :  utils.py : 32: Training model: RF
+2024-06-16 19:42:26,197 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 19:42:26,197 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 19:42:26,197 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 19:42:26,197 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.7628341858958672
+2024-06-16 19:42:26,197 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.5640145524126926
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.8338114153152061
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8166605686104284
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8240202848519546
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8618189366835682
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8578900038658156
+2024-06-16 19:42:26,198 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 19:42:26,200 : INFO : root :  model_trainer.py : 71: Saved Best
+2024-06-16 19:42:26,201 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 19:42:26,201 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 20:57:03,488 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 20:57:03,493 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 20:57:03,507 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 20:57:03,507 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 20:57:03,509 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 20:57:03,509 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 20:57:03,509 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 20:57:03,509 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 20:57:03,509 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 20:57:03,510 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 20:57:03,523 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 20:57:03,523 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 20:57:03,523 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 20:57:03,524 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 20:57:03,524 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 20:57:03,524 : DEBUG : root :  utils.py : 51: 'module' object is not callable
+2024-06-16 20:57:03,524 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: ['module' object is not callable]
+2024-06-16 20:57:03,524 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: ['module' object is not callable]]
+2024-06-16 20:57:31,663 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 20:57:31,666 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 20:57:31,673 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 20:57:31,673 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 20:57:31,675 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 20:57:31,675 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 20:57:31,675 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 20:57:31,675 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 20:57:31,675 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 20:57:31,676 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 20:57:31,689 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 20:57:31,689 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 20:57:31,689 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 20:57:31,689 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 20:57:31,689 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 20:57:31,698 : DEBUG : root :  utils.py : 51: Parameter grid for parameter 'SVR' needs to be a list or a numpy array, but got {'kernel': ['linear', 'poly', 'rbf'], 'degree': [0, 1, 2, 3, 4], 'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]} (of type dict) instead. Single values need to be wrapped in a list with one element.
+2024-06-16 20:57:31,698 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Parameter grid for parameter 'SVR' needs to be a list or a numpy array, but got {'kernel': ['linear', 'poly', 'rbf'], 'degree': [0, 1, 2, 3, 4], 'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]} (of type dict) instead. Single values need to be wrapped in a list with one element.]
+2024-06-16 20:57:31,699 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Parameter grid for parameter 'SVR' needs to be a list or a numpy array, but got {'kernel': ['linear', 'poly', 'rbf'], 'degree': [0, 1, 2, 3, 4], 'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]} (of type dict) instead. Single values need to be wrapped in a list with one element.]]
+2024-06-16 20:59:40,025 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 20:59:40,027 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 20:59:40,035 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 20:59:40,035 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 20:59:40,037 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 20:59:40,037 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 20:59:40,037 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 20:59:40,037 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 20:59:40,037 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 20:59:40,038 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 20:59:40,049 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 20:59:40,049 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 20:59:40,049 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 20:59:40,049 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 20:59:40,049 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 20:59:40,057 : DEBUG : root :  utils.py : 51: Parameter grid for parameter 'KNN' needs to be a list or a numpy array, but got {'n_neighbors': [1, 2, 3, 4, 5], 'weights': ['uniform', 'distance'], 'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']} (of type dict) instead. Single values need to be wrapped in a list with one element.
+2024-06-16 20:59:40,058 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Parameter grid for parameter 'KNN' needs to be a list or a numpy array, but got {'n_neighbors': [1, 2, 3, 4, 5], 'weights': ['uniform', 'distance'], 'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']} (of type dict) instead. Single values need to be wrapped in a list with one element.]
+2024-06-16 20:59:40,058 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Parameter grid for parameter 'KNN' needs to be a list or a numpy array, but got {'n_neighbors': [1, 2, 3, 4, 5], 'weights': ['uniform', 'distance'], 'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']} (of type dict) instead. Single values need to be wrapped in a list with one element.]]
+2024-06-16 21:02:04,016 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:02:04,019 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:02:04,028 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:02:04,028 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:02:04,030 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:02:04,030 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:02:04,030 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:02:04,030 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:02:04,030 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:02:04,031 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:02:04,043 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:02:04,043 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:02:04,043 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:02:04,043 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:02:04,043 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:02:04,043 : DEBUG : root :  utils.py : 51: unhashable type: 'dict'
+2024-06-16 21:02:04,043 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: [unhashable type: 'dict']
+2024-06-16 21:02:04,043 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: [unhashable type: 'dict']]
+2024-06-16 21:02:34,360 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:02:34,362 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:02:34,369 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:02:34,369 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:02:34,371 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:02:34,371 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:02:34,371 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:02:34,371 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:02:34,371 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:02:34,372 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:02:34,383 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:02:34,383 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:02:34,383 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:02:34,383 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:02:34,383 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:02:35,911 : DEBUG : root :  utils.py : 51: Invalid parameter 'ADB' for estimator LinearRegression(). Valid parameters are: ['copy_X', 'fit_intercept', 'n_jobs', 'positive'].
+2024-06-16 21:02:35,911 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Invalid parameter 'ADB' for estimator LinearRegression(). Valid parameters are: ['copy_X', 'fit_intercept', 'n_jobs', 'positive'].]
+2024-06-16 21:02:35,911 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [Invalid parameter 'ADB' for estimator LinearRegression(). Valid parameters are: ['copy_X', 'fit_intercept', 'n_jobs', 'positive'].]]
+2024-06-16 21:03:34,222 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:03:34,226 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:03:34,234 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:03:34,235 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:03:34,236 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:03:34,236 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:03:34,237 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:03:34,237 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:03:34,237 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:03:34,237 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:03:34,248 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:03:34,248 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:03:34,248 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:03:34,248 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:03:34,248 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:03:34,248 : DEBUG : root :  utils.py : 51: 'LR'
+2024-06-16 21:03:34,248 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: ['LR']
+2024-06-16 21:03:34,248 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [38] error message: ['LR']]
+2024-06-16 21:04:44,139 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:04:44,142 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:04:44,151 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:04:44,151 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:04:44,153 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:04:44,165 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:04:44,165 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:04:44,165 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:04:44,165 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:04:44,165 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:04:44,174 : DEBUG : root :  utils.py : 51: No fits were performed. Was the CV iterator empty? Were there no candidates?
+2024-06-16 21:04:44,174 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [No fits were performed. Was the CV iterator empty? Were there no candidates?]
+2024-06-16 21:04:44,174 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [40] error message: [No fits were performed. Was the CV iterator empty? Were there no candidates?]]
+2024-06-16 21:05:59,292 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:05:59,298 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:05:59,310 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:05:59,310 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:05:59,312 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:05:59,312 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:05:59,312 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:05:59,312 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:05:59,312 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:05:59,313 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:05:59,328 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:05:59,328 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:05:59,328 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:05:59,328 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:05:59,328 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:06:00,467 : DEBUG : root :  utils.py : 51: This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-06-16 21:06:00,467 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [42] error message: [This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+2024-06-16 21:06:00,467 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [42] error message: [This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]]
+2024-06-16 21:07:28,292 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:07:28,295 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:07:28,303 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:07:28,303 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:07:28,305 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:07:28,319 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:07:28,319 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:07:28,319 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:07:28,319 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:07:28,319 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:07:28,319 : INFO : root :  utils.py : 37: LinearRegression()
+2024-06-16 21:07:28,320 : INFO : root :  utils.py : 41: GridSearchCV(cv=5, estimator=LinearRegression(), n_jobs=-1,
+             param_grid=[{'fit_intercept': [True]}], scoring='r2')
+2024-06-16 21:07:29,984 : DEBUG : root :  utils.py : 53: This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2024-06-16 21:07:29,987 : DEBUG : root :  model_trainer.py : 74: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [44] error message: [This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+2024-06-16 21:07:29,987 : DEBUG : root :  train_pipeline.py : 38: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/components/model_trainer.py] line: [51] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [44] error message: [This LinearRegression instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]]
+2024-06-16 21:11:05,109 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 21:11:05,114 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 21:11:05,124 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 21:11:05,124 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 21:11:05,126 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 21:11:05,126 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 21:11:05,126 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 21:11:05,126 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 21:11:05,126 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 21:11:05,127 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 21:11:05,140 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 21:11:05,140 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 21:11:05,140 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 21:11:05,141 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 21:11:05,141 : INFO : root :  utils.py : 34: Training model: LR
+2024-06-16 21:11:05,141 : INFO : root :  utils.py : 37: LinearRegression()
+2024-06-16 21:11:05,169 : INFO : root :  utils.py : 34: Training model: SVR
+2024-06-16 21:11:05,169 : INFO : root :  utils.py : 37: SVR()
+2024-06-16 21:11:05,169 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=SVR(), n_jobs=-1,
+             param_grid=[{'kernel': ['linear', 'poly', 'rbf']},
+                         {'degree': [0, 1, 2, 3, 4]},
+                         {'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]}],
+             scoring='r2')
+2024-06-16 21:11:07,035 : INFO : root :  utils.py : 34: Training model: KNN
+2024-06-16 21:11:07,035 : INFO : root :  utils.py : 37: KNeighborsRegressor()
+2024-06-16 21:11:07,036 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=KNeighborsRegressor(), n_jobs=-1,
+             param_grid=[{'n_neighbors': [1, 2, 3, 4, 5]},
+                         {'weights': ['uniform', 'distance']},
+                         {'algorithm': ['auto', 'ball_tree', 'kd_tree',
+                                        'brute']}],
+             scoring='r2')
+2024-06-16 21:11:07,396 : INFO : root :  utils.py : 34: Training model: DT
+2024-06-16 21:11:07,396 : INFO : root :  utils.py : 37: DecisionTreeRegressor(random_state=0)
+2024-06-16 21:11:07,397 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=DecisionTreeRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 21:11:07,530 : INFO : root :  utils.py : 34: Training model: XGB
+2024-06-16 21:11:07,530 : INFO : root :  utils.py : 37: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2024-06-16 21:11:07,531 : INFO : root :  utils.py : 46: GridSearchCV(cv=5,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    callbacks=None, colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, device=None,
+                                    early_stopping_rounds=None,
+                                    enable_categorical=False, eval_metric=None,
+                                    feature_types=None, gamma=None,
+                                    grow_policy=None, importance_type=None,
+                                    interaction_constraints=None,
+                                    learning_rate=None, m...
+                                    multi_strategy=None, n_estimators=None,
+                                    n_jobs=None, num_parallel_tree=None,
+                                    random_state=None, ...),
+             n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'max_leaves': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                         14, 15, 16, 17, 18, 19]},
+                         {'grow_policy': [1]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 21:11:10,547 : INFO : root :  utils.py : 34: Training model: ADB
+2024-06-16 21:11:10,548 : INFO : root :  utils.py : 37: AdaBoostRegressor(random_state=0)
+2024-06-16 21:11:10,548 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=AdaBoostRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 21:11:11,446 : INFO : root :  utils.py : 34: Training model: GBR
+2024-06-16 21:11:11,446 : INFO : root :  utils.py : 37: GradientBoostingRegressor()
+2024-06-16 21:11:11,446 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=GradientBoostingRegressor(), n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 21:11:17,420 : INFO : root :  utils.py : 34: Training model: RF
+2024-06-16 21:11:17,421 : INFO : root :  utils.py : 37: RandomForestRegressor(random_state=0)
+2024-06-16 21:11:17,421 : INFO : root :  utils.py : 46: GridSearchCV(cv=5, estimator=RandomForestRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 21:11:24,480 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.8633162036399846
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.6359602536237001
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.850059868367145
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8541271955261351
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8256261880902456
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8639081252243578
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8625357792145247
+2024-06-16 21:11:24,481 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 21:11:24,483 : INFO : root :  model_trainer.py : 71: Saved Best
+2024-06-16 21:11:24,483 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 21:11:24,484 : INFO : root :  train_pipeline.py : 35: Pipeline Executed

@@ -1,0 +1,23 @@
+2024-06-15 22:39:35,350 : INFO : root :  logger.py : 23: Logging has Started
+2024-06-15 22:39:54,329 : DEBUG : root :  exception.py : 29: division by zero
+2024-06-15 22:40:17,220 : INFO : root :  exception.py : 29: division by zero
+2024-06-15 23:22:06,325 : DEBUG : root :  data_ingestion.py : 30: 'int' object is not callable
+2024-06-15 23:22:16,079 : DEBUG : root :  data_ingestion.py : 30: 'int' object is not callable
+2024-06-15 23:22:46,507 : DEBUG : root :  data_ingestion.py : 30: 'int' object is not callable
+2024-06-15 23:23:29,167 : INFO : root :  data_ingestion.py : 23: Read data csv file
+2024-06-15 23:23:29,169 : DEBUG : root :  data_ingestion.py : 30: [Errno 21] Is a directory: 'artifacts/train.csv'
+2024-06-15 23:23:44,370 : INFO : root :  data_ingestion.py : 23: Read data csv file
+2024-06-15 23:23:44,371 : DEBUG : root :  data_ingestion.py : 30: [Errno 21] Is a directory: 'artifacts/train.csv'
+2024-06-15 23:24:15,072 : INFO : root :  data_ingestion.py : 23: Read data csv file
+2024-06-15 23:24:15,073 : DEBUG : root :  data_ingestion.py : 30: Cannot save file into a non-existent directory: 'artifacts'
+2024-06-15 23:25:02,207 : INFO : root :  data_ingestion.py : 23: Read data csv file
+2024-06-15 23:28:24,198 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:28:24,209 : INFO : root :  data_ingestion.py : 35: Created data artifacts
+2024-06-15 23:29:32,245 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:29:32,264 : INFO : root :  data_ingestion.py : 37: Created data artifacts
+2024-06-15 23:30:02,316 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:30:02,324 : INFO : root :  data_ingestion.py : 37: Created data artifacts
+2024-06-15 23:33:10,047 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:34:07,286 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:34:40,941 : INFO : root :  data_ingestion.py : 24: Reading data csv file
+2024-06-15 23:34:40,949 : INFO : root :  data_ingestion.py : 37: Created data artifacts

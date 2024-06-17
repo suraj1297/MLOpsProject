@@ -40,11 +40,11 @@ class ModelTrainer:
                 "LR": LinearRegression(),
                 "SVR": SVR(),
                 "KNN": KNeighborsRegressor(),
-                "DT": DecisionTreeRegressor(max_depth=5),
+                "DT": DecisionTreeRegressor(random_state=0),
                 "XGB": XGBRegressor(),
-                "ADB": AdaBoostRegressor(),
+                "ADB": AdaBoostRegressor(random_state=0),
                 "GBR": GradientBoostingRegressor(),
-                "RF": RandomForestRegressor()
+                "RF": RandomForestRegressor(random_state=0)
             }
             logging.info("Evaluating Models")
 
