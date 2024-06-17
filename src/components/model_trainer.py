@@ -64,7 +64,6 @@ class ModelTrainer:
                 logging.info(f"Model Score: {model_name}, score: { model_scores[model_name][1]}")
 
             logging.info("Saving best Models")
-            print(best_model)
 
             save_object(self.trainer_config.trained_model_path, best_model[1])
 

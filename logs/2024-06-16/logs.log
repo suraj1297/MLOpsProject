@@ -601,3 +601,662 @@
 2024-06-16 21:11:24,483 : INFO : root :  model_trainer.py : 71: Saved Best
 2024-06-16 21:11:24,483 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
 2024-06-16 21:11:24,484 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 21:52:49,781 : INFO : werkzeug :  _internal.py : 97: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9876
+ * Running on http://10.0.0.7:9876
+2024-06-16 21:52:49,782 : INFO : werkzeug :  _internal.py : 97: [33mPress CTRL+C to quit[0m
+2024-06-16 21:53:12,786 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:53:12] "GET / HTTP/1.1" 200 -
+2024-06-16 21:53:13,492 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:53:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-06-16 21:53:17,491 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:53:17] "[33mGET /predict HTTP/1.1[0m" 404 -
+2024-06-16 21:53:19,675 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:53:19] "GET /predictdata HTTP/1.1" 200 -
+2024-06-16 21:53:50,620 : INFO : root :  predict_pipeline.py : 17: Before Loading
+2024-06-16 21:53:50,937 : ERROR : app :  app.py : 838: Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/utils.py", line 64, in load_object
+    with open(file_path, "rb") as file_obj:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 19, in predict
+    preprocessor=load_object(file_path=preprocessor_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/utils.py", line 68, in load_object
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [64] error message: [[Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/app.py", line 39, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 26, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py] line: [19] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [64] error message: [[Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl']]
+2024-06-16 21:53:50,940 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:53:50] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+2024-06-16 21:55:02,085 : INFO : root :  predict_pipeline.py : 17: Before Loading
+2024-06-16 21:55:02,087 : ERROR : app :  app.py : 838: Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/utils.py", line 64, in load_object
+    with open(file_path, "rb") as file_obj:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 19, in predict
+    preprocessor=load_object(file_path=preprocessor_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/utils.py", line 68, in load_object
+    raise CustomException(e, sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [64] error message: [[Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/app.py", line 39, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 26, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py] line: [19] error message: [Error occured in python script name: [/Users/surajdesai/ds/mlops/src/utils.py] line: [64] error message: [[Errno 2] No such file or directory: 'artifacts/pickles/preprocessor.pkl']]
+2024-06-16 21:55:02,089 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:55:02] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+2024-06-16 21:55:09,335 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:55:09] "GET /predictdata HTTP/1.1" 200 -
+2024-06-16 21:56:00,123 : INFO : werkzeug :  _internal.py : 97: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9876
+ * Running on http://10.0.0.7:9876
+2024-06-16 21:56:00,123 : INFO : werkzeug :  _internal.py : 97: [33mPress CTRL+C to quit[0m
+2024-06-16 21:56:02,788 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:56:02] "GET /predictdata HTTP/1.1" 200 -
+2024-06-16 21:56:17,536 : INFO : root :  predict_pipeline.py : 17: Before Loading
+2024-06-16 21:56:17,699 : INFO : root :  predict_pipeline.py : 20: After Loading
+2024-06-16 21:56:17,707 : ERROR : app :  app.py : 838: Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 22, in predict
+    preds=model.predict(data_scaled)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/ensemble/_gb.py", line 2124, in predict
+    return self._raw_predict(X).ravel()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/ensemble/_gb.py", line 960, in _raw_predict
+    check_is_fitted(self)
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1632, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This GradientBoostingRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/app.py", line 39, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 26, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py] line: [22] error message: [This GradientBoostingRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+2024-06-16 21:56:17,712 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:56:17] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+2024-06-16 21:57:23,747 : INFO : werkzeug :  _internal.py : 97: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9876
+ * Running on http://10.0.0.7:9876
+2024-06-16 21:57:23,747 : INFO : werkzeug :  _internal.py : 97: [33mPress CTRL+C to quit[0m
+2024-06-16 21:57:27,017 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:57:27] "GET /predictdata HTTP/1.1" 200 -
+2024-06-16 21:57:36,673 : INFO : root :  predict_pipeline.py : 17: Before Loading
+2024-06-16 21:57:36,841 : INFO : root :  predict_pipeline.py : 20: After Loading
+2024-06-16 21:57:36,848 : INFO : root :  predict_pipeline.py : 22: [[2.03701771 2.02468754 0.         2.00226008 3.49428279 0.
+  0.         0.         0.         2.40912498 0.         0.
+  0.         0.         0.         2.10183809 0.         0.
+  2.08333333]]
+2024-06-16 21:57:36,849 : ERROR : app :  app.py : 838: Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 23, in predict
+    preds=model.predict(data_scaled)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/ensemble/_gb.py", line 2124, in predict
+    return self._raw_predict(X).ravel()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/ensemble/_gb.py", line 960, in _raw_predict
+    check_is_fitted(self)
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1632, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This GradientBoostingRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/venv/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/app.py", line 39, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py", line 27, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script name: [/Users/surajdesai/ds/mlops/src/pipeline/predict_pipeline.py] line: [23] error message: [This GradientBoostingRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+2024-06-16 21:57:36,853 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 21:57:36] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+2024-06-16 22:02:27,281 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 22:02:27,287 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 22:02:27,299 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 22:02:27,299 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 22:02:27,301 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 22:02:27,301 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 22:02:27,301 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 22:02:27,301 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 22:02:27,301 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 22:02:27,302 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 22:02:27,315 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 22:02:27,315 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 22:02:27,315 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 22:02:27,315 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 22:02:27,315 : INFO : root :  utils.py : 35: Training model: LR
+2024-06-16 22:02:27,315 : INFO : root :  utils.py : 38: LinearRegression()
+2024-06-16 22:02:27,332 : INFO : root :  utils.py : 35: Training model: SVR
+2024-06-16 22:02:27,332 : INFO : root :  utils.py : 38: SVR()
+2024-06-16 22:02:27,332 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=SVR(), n_jobs=-1,
+             param_grid=[{'kernel': ['linear', 'poly', 'rbf']},
+                         {'degree': [0, 1, 2, 3, 4]},
+                         {'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]}],
+             scoring='r2')
+2024-06-16 22:02:29,185 : INFO : root :  utils.py : 35: Training model: KNN
+2024-06-16 22:02:29,185 : INFO : root :  utils.py : 38: KNeighborsRegressor()
+2024-06-16 22:02:29,185 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=KNeighborsRegressor(), n_jobs=-1,
+             param_grid=[{'n_neighbors': [1, 2, 3, 4, 5]},
+                         {'weights': ['uniform', 'distance']},
+                         {'algorithm': ['auto', 'ball_tree', 'kd_tree',
+                                        'brute']}],
+             scoring='r2')
+2024-06-16 22:02:29,394 : INFO : root :  utils.py : 35: Training model: DT
+2024-06-16 22:02:29,394 : INFO : root :  utils.py : 38: DecisionTreeRegressor(random_state=0)
+2024-06-16 22:02:29,394 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=DecisionTreeRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:02:29,607 : INFO : root :  utils.py : 35: Training model: XGB
+2024-06-16 22:02:29,607 : INFO : root :  utils.py : 38: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2024-06-16 22:02:29,608 : INFO : root :  utils.py : 48: GridSearchCV(cv=5,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    callbacks=None, colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, device=None,
+                                    early_stopping_rounds=None,
+                                    enable_categorical=False, eval_metric=None,
+                                    feature_types=None, gamma=None,
+                                    grow_policy=None, importance_type=None,
+                                    interaction_constraints=None,
+                                    learning_rate=None, m...
+                                    multi_strategy=None, n_estimators=None,
+                                    n_jobs=None, num_parallel_tree=None,
+                                    random_state=None, ...),
+             n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'max_leaves': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                         14, 15, 16, 17, 18, 19]},
+                         {'grow_policy': [1]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:02:32,164 : INFO : root :  utils.py : 35: Training model: ADB
+2024-06-16 22:02:32,164 : INFO : root :  utils.py : 38: AdaBoostRegressor(random_state=0)
+2024-06-16 22:02:32,165 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=AdaBoostRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:02:33,083 : INFO : root :  utils.py : 35: Training model: GBR
+2024-06-16 22:02:33,083 : INFO : root :  utils.py : 38: GradientBoostingRegressor()
+2024-06-16 22:02:33,083 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=GradientBoostingRegressor(), n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:02:37,290 : INFO : root :  utils.py : 35: Training model: RF
+2024-06-16 22:02:37,290 : INFO : root :  utils.py : 38: RandomForestRegressor(random_state=0)
+2024-06-16 22:02:37,291 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=RandomForestRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                                           12, 13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:02:45,101 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.8633162036399846
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.6359602536237001
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.850059868367145
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8541271955261351
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8256261880902456
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8639081252243578
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8625357792145247
+2024-06-16 22:02:45,102 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 22:02:45,127 : INFO : root :  model_trainer.py : 71: Saved Best
+2024-06-16 22:02:45,128 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 22:02:45,128 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 22:04:12,712 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 22:04:12,717 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 22:04:12,727 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 22:04:12,727 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 22:04:12,729 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 22:04:12,729 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 22:04:12,729 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 22:04:12,729 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 22:04:12,730 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 22:04:12,730 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 22:04:12,749 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 22:04:12,749 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 22:04:12,749 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 22:04:12,749 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 22:04:12,749 : INFO : root :  utils.py : 35: Training model: LR
+2024-06-16 22:04:12,749 : INFO : root :  utils.py : 38: LinearRegression()
+2024-06-16 22:04:12,775 : INFO : root :  utils.py : 35: Training model: SVR
+2024-06-16 22:04:12,775 : INFO : root :  utils.py : 38: SVR()
+2024-06-16 22:04:12,775 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=SVR(), n_jobs=-1,
+             param_grid=[{'kernel': ['linear', 'poly', 'rbf']},
+                         {'degree': [0, 1, 2, 3, 4]},
+                         {'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]}],
+             scoring='r2')
+2024-06-16 22:04:15,081 : INFO : root :  utils.py : 35: Training model: KNN
+2024-06-16 22:04:15,081 : INFO : root :  utils.py : 38: KNeighborsRegressor()
+2024-06-16 22:04:15,081 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=KNeighborsRegressor(), n_jobs=-1,
+             param_grid=[{'n_neighbors': [1, 2, 3, 4, 5]},
+                         {'weights': ['uniform', 'distance']},
+                         {'algorithm': ['auto', 'ball_tree', 'kd_tree',
+                                        'brute']}],
+             scoring='r2')
+2024-06-16 22:04:15,370 : INFO : root :  utils.py : 35: Training model: DT
+2024-06-16 22:04:15,370 : INFO : root :  utils.py : 38: DecisionTreeRegressor(random_state=0)
+2024-06-16 22:04:15,370 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=DecisionTreeRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:04:15,569 : INFO : root :  utils.py : 35: Training model: XGB
+2024-06-16 22:04:15,569 : INFO : root :  utils.py : 38: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2024-06-16 22:04:15,569 : INFO : root :  utils.py : 48: GridSearchCV(cv=5,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    callbacks=None, colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, device=None,
+                                    early_stopping_rounds=None,
+                                    enable_categorical=False, eval_metric=None,
+                                    feature_types=None, gamma=None,
+                                    grow_policy=None, importance_type=None,
+                                    interaction_constraints=None,
+                                    learning_rate=None, m...
+                                    multi_strategy=None, n_estimators=None,
+                                    n_jobs=None, num_parallel_tree=None,
+                                    random_state=None, ...),
+             n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'max_leaves': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                         14, 15, 16, 17, 18, 19]},
+                         {'grow_policy': [1]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:04:18,943 : INFO : root :  utils.py : 35: Training model: ADB
+2024-06-16 22:04:18,943 : INFO : root :  utils.py : 38: AdaBoostRegressor(random_state=0)
+2024-06-16 22:04:18,943 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=AdaBoostRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:04:19,884 : INFO : root :  utils.py : 35: Training model: GBR
+2024-06-16 22:04:19,884 : INFO : root :  utils.py : 38: GradientBoostingRegressor()
+2024-06-16 22:04:19,884 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=GradientBoostingRegressor(), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:04:24,676 : INFO : root :  utils.py : 35: Training model: RF
+2024-06-16 22:04:24,677 : INFO : root :  utils.py : 38: RandomForestRegressor(random_state=0)
+2024-06-16 22:04:24,678 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=RandomForestRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.8633162036399846
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.6359602536237001
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.850059868367145
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8541271955261351
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8256261880902456
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8639081252243578
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8625357792145247
+2024-06-16 22:04:31,362 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 22:04:31,384 : INFO : root :  model_trainer.py : 70: Saved Best
+2024-06-16 22:04:31,385 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 22:04:31,385 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 22:05:14,787 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 22:05:14,801 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 22:05:14,815 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 22:05:14,815 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 22:05:14,817 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 22:05:14,817 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 22:05:14,817 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 22:05:14,817 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 22:05:14,817 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 22:05:14,818 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 22:05:14,833 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 22:05:14,833 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 22:05:14,833 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 22:05:14,833 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 22:05:14,833 : INFO : root :  utils.py : 35: Training model: LR
+2024-06-16 22:05:14,833 : INFO : root :  utils.py : 38: LinearRegression()
+2024-06-16 22:05:14,864 : INFO : root :  utils.py : 35: Training model: SVR
+2024-06-16 22:05:14,864 : INFO : root :  utils.py : 38: SVR()
+2024-06-16 22:05:14,865 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=SVR(), n_jobs=-1,
+             param_grid=[{'kernel': ['linear', 'poly', 'rbf']},
+                         {'degree': [0, 1, 2, 3, 4]},
+                         {'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]}],
+             scoring='r2')
+2024-06-16 22:05:17,248 : INFO : root :  utils.py : 35: Training model: KNN
+2024-06-16 22:05:17,248 : INFO : root :  utils.py : 38: KNeighborsRegressor()
+2024-06-16 22:05:17,248 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=KNeighborsRegressor(), n_jobs=-1,
+             param_grid=[{'n_neighbors': [1, 2, 3, 4, 5]},
+                         {'weights': ['uniform', 'distance']},
+                         {'algorithm': ['auto', 'ball_tree', 'kd_tree',
+                                        'brute']}],
+             scoring='r2')
+2024-06-16 22:05:17,607 : INFO : root :  utils.py : 35: Training model: DT
+2024-06-16 22:05:17,607 : INFO : root :  utils.py : 38: DecisionTreeRegressor(random_state=0)
+2024-06-16 22:05:17,607 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=DecisionTreeRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:05:17,739 : INFO : root :  utils.py : 35: Training model: XGB
+2024-06-16 22:05:17,739 : INFO : root :  utils.py : 38: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2024-06-16 22:05:17,740 : INFO : root :  utils.py : 48: GridSearchCV(cv=5,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    callbacks=None, colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, device=None,
+                                    early_stopping_rounds=None,
+                                    enable_categorical=False, eval_metric=None,
+                                    feature_types=None, gamma=None,
+                                    grow_policy=None, importance_type=None,
+                                    interaction_constraints=None,
+                                    learning_rate=None, m...
+                                    multi_strategy=None, n_estimators=None,
+                                    n_jobs=None, num_parallel_tree=None,
+                                    random_state=None, ...),
+             n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'max_leaves': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                         14, 15, 16, 17, 18, 19]},
+                         {'grow_policy': ['lossguide']},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:05:20,098 : INFO : root :  utils.py : 35: Training model: ADB
+2024-06-16 22:05:20,098 : INFO : root :  utils.py : 38: AdaBoostRegressor(random_state=0)
+2024-06-16 22:05:20,098 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=AdaBoostRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:05:20,885 : INFO : root :  utils.py : 35: Training model: GBR
+2024-06-16 22:05:20,886 : INFO : root :  utils.py : 38: GradientBoostingRegressor()
+2024-06-16 22:05:20,886 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=GradientBoostingRegressor(), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:05:24,956 : INFO : root :  utils.py : 35: Training model: RF
+2024-06-16 22:05:24,956 : INFO : root :  utils.py : 38: RandomForestRegressor(random_state=0)
+2024-06-16 22:05:24,956 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=RandomForestRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.8633162036399846
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.6359602536237001
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.850059868367145
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8541271955261351
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8256261880902456
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8639081252243578
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8625357792145247
+2024-06-16 22:05:32,246 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 22:05:32,266 : INFO : root :  model_trainer.py : 70: Saved Best
+2024-06-16 22:05:32,267 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 22:05:32,267 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 22:05:45,584 : INFO : root :  train_pipeline.py : 21: Starting Data Ingestion
+2024-06-16 22:05:45,589 : INFO : root :  data_ingestion.py : 25: Reading data csv file
+2024-06-16 22:05:45,600 : INFO : root :  data_ingestion.py : 36: Created data artifacts
+2024-06-16 22:05:45,600 : INFO : root :  train_pipeline.py : 25: Starting Data Transformation
+2024-06-16 22:05:45,602 : INFO : root :  data_transformation.py : 68: Read data for Transformation
+2024-06-16 22:05:45,602 : INFO : root :  data_transformation.py : 38: Created Numerical Pipeline
+2024-06-16 22:05:45,602 : INFO : root :  data_transformation.py : 46: Create Categorical pipeline
+2024-06-16 22:05:45,602 : INFO : root :  data_transformation.py : 54: Created ColumnTransformer
+2024-06-16 22:05:45,602 : INFO : root :  data_transformation.py : 72: Created Data Transformation Object
+2024-06-16 22:05:45,604 : INFO : root :  data_transformation.py : 80: Dropped Target feature from train n test data
+2024-06-16 22:05:45,617 : INFO : root :  train_pipeline.py : 29: Starting training Models
+2024-06-16 22:05:45,618 : INFO : root :  model_trainer.py : 30: Reading data fro model training
+2024-06-16 22:05:45,618 : INFO : root :  model_trainer.py : 37: Read Data Successfully
+2024-06-16 22:05:45,618 : INFO : root :  model_trainer.py : 49: Evaluating Models
+2024-06-16 22:05:45,618 : INFO : root :  utils.py : 35: Training model: LR
+2024-06-16 22:05:45,618 : INFO : root :  utils.py : 38: LinearRegression()
+2024-06-16 22:05:45,637 : INFO : root :  utils.py : 35: Training model: SVR
+2024-06-16 22:05:45,637 : INFO : root :  utils.py : 38: SVR()
+2024-06-16 22:05:45,637 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=SVR(), n_jobs=-1,
+             param_grid=[{'kernel': ['linear', 'poly', 'rbf']},
+                         {'degree': [0, 1, 2, 3, 4]},
+                         {'epsilon': [0.01, 0.1, 0.5, 1.0, 0.001]}],
+             scoring='r2')
+2024-06-16 22:05:47,759 : INFO : root :  utils.py : 35: Training model: KNN
+2024-06-16 22:05:47,760 : INFO : root :  utils.py : 38: KNeighborsRegressor()
+2024-06-16 22:05:47,760 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=KNeighborsRegressor(), n_jobs=-1,
+             param_grid=[{'n_neighbors': [1, 2, 3, 4, 5]},
+                         {'weights': ['uniform', 'distance']},
+                         {'algorithm': ['auto', 'ball_tree', 'kd_tree',
+                                        'brute']}],
+             scoring='r2')
+2024-06-16 22:05:47,904 : INFO : root :  utils.py : 35: Training model: DT
+2024-06-16 22:05:47,904 : INFO : root :  utils.py : 38: DecisionTreeRegressor(random_state=0)
+2024-06-16 22:05:47,904 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=DecisionTreeRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:05:48,183 : INFO : root :  utils.py : 35: Training model: XGB
+2024-06-16 22:05:48,183 : INFO : root :  utils.py : 38: XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)
+2024-06-16 22:05:48,184 : INFO : root :  utils.py : 48: GridSearchCV(cv=5,
+             estimator=XGBRegressor(base_score=None, booster=None,
+                                    callbacks=None, colsample_bylevel=None,
+                                    colsample_bynode=None,
+                                    colsample_bytree=None, device=None,
+                                    early_stopping_rounds=None,
+                                    enable_categorical=False, eval_metric=None,
+                                    feature_types=None, gamma=None,
+                                    grow_policy=None, importance_type=None,
+                                    interaction_constraints=None,
+                                    learning_rate=None, m...
+                                    multi_strategy=None, n_estimators=None,
+                                    n_jobs=None, num_parallel_tree=None,
+                                    random_state=None, ...),
+             n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'max_leaves': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                         14, 15, 16, 17, 18, 19]},
+                         {'grow_policy': ['lossguide']},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:05:51,516 : INFO : root :  utils.py : 35: Training model: ADB
+2024-06-16 22:05:51,517 : INFO : root :  utils.py : 38: AdaBoostRegressor(random_state=0)
+2024-06-16 22:05:51,518 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=AdaBoostRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14]},
+                         {'learning_rate': [0.001, 0.0001, 0.01, 0.1, 1]}],
+             scoring='r2')
+2024-06-16 22:05:52,553 : INFO : root :  utils.py : 35: Training model: GBR
+2024-06-16 22:05:52,553 : INFO : root :  utils.py : 38: GradientBoostingRegressor()
+2024-06-16 22:05:52,553 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=GradientBoostingRegressor(), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:05:57,263 : INFO : root :  utils.py : 35: Training model: RF
+2024-06-16 22:05:57,264 : INFO : root :  utils.py : 38: RandomForestRegressor(random_state=0)
+2024-06-16 22:05:57,264 : INFO : root :  utils.py : 48: GridSearchCV(cv=5, estimator=RandomForestRegressor(random_state=0), n_jobs=-1,
+             param_grid=[{'n_estimators': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                                           13, 14, 15, 16, 17, 18, 19]},
+                         {'max_depth': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                        14]},
+                         {'min_samples_split': [2, 3, 4, 5, 6, 7, 8, 9]},
+                         {'min_samples_leaf': [1, 2, 3, 4, 5, 6, 7, 8, 9]}],
+             scoring='r2')
+2024-06-16 22:06:04,879 : INFO : root :  model_trainer.py : 53: Evaluated Models
+2024-06-16 22:06:04,879 : INFO : root :  model_trainer.py : 58: Fetching best Model
+2024-06-16 22:06:04,879 : INFO : root :  model_trainer.py : 64: Model Score: LR, score: 0.8637192519961245
+2024-06-16 22:06:04,879 : INFO : root :  model_trainer.py : 64: Model Score: SVR, score: 0.8633162036399846
+2024-06-16 22:06:04,879 : INFO : root :  model_trainer.py : 64: Model Score: KNN, score: 0.6359602536237001
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 64: Model Score: DT, score: 0.850059868367145
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 64: Model Score: XGB, score: 0.8541271955261351
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 64: Model Score: ADB, score: 0.8256261880902456
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 64: Model Score: GBR, score: 0.8639081252243579
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 64: Model Score: RF, score: 0.8625357792145247
+2024-06-16 22:06:04,880 : INFO : root :  model_trainer.py : 66: Saving best Models
+2024-06-16 22:06:04,901 : INFO : root :  model_trainer.py : 70: Saved Best
+2024-06-16 22:06:04,902 : INFO : root :  train_pipeline.py : 33: Saved Best Model at path: artifacts/pickles/model.pkl
+2024-06-16 22:06:04,902 : INFO : root :  train_pipeline.py : 35: Pipeline Executed
+2024-06-16 22:06:38,369 : INFO : werkzeug :  _internal.py : 97: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9876
+ * Running on http://10.0.0.7:9876
+2024-06-16 22:06:38,370 : INFO : werkzeug :  _internal.py : 97: [33mPress CTRL+C to quit[0m
+2024-06-16 22:06:46,863 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 22:06:46] "GET /predictdata HTTP/1.1" 200 -
+2024-06-16 22:08:19,969 : INFO : root :  predict_pipeline.py : 17: Before Loading
+2024-06-16 22:08:20,210 : INFO : root :  predict_pipeline.py : 20: After Loading
+2024-06-16 22:08:20,220 : INFO : root :  predict_pipeline.py : 22: [[1.89939301 1.76142057 0.         2.00226008 3.49428279 0.
+  0.         0.         0.         0.         3.14953307 0.
+  0.         0.         0.         2.10183809 0.         2.08333333
+  0.        ]]
+2024-06-16 22:08:20,221 : INFO : werkzeug :  _internal.py : 97: 127.0.0.1 - - [16/Jun/2024 22:08:20] "POST /predictdata HTTP/1.1" 200 -
