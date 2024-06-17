@@ -7,4 +7,6 @@
 
 3. ``` docker run -p 9876:9876 flask-image ```
 
+4. ```http:\\localhost:9876\predictdata ```
+
 ![Screenshot](./images/image.png)
